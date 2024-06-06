@@ -69,7 +69,7 @@ public class SaveObjectConrtroler {
             try {
                 FileOutputStream fileOut = new FileOutputStream(file);
                 ObjectOutputStream out = new ObjectOutputStream(fileOut);
-//                out.writeObject(userList);
+                out.writeObject(userList);
                 out.close();
                 fileOut.close();
 
@@ -120,7 +120,7 @@ public class SaveObjectConrtroler {
                     FileOutputStream fileOut = new FileOutputStream(file);
                     ObjectOutputStream out = new ObjectOutputStream(fileOut);
 
-                    out.writeObject(userList);
+                    out.writeObject(userList) ;
                     out.close();
                     fileOut.close();
 
